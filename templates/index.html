@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ComicCraft</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="container">
+
+        <h1>🎨 ComicCraft</h1>
+
+        <h2>AI Comic Story Creator</h2>
+
+        <p>
+            Turn your imagination into a comic
+            using Artificial Intelligence.
+        </p>
+
+
+        <form
+            action="/generate"
+            method="POST"
+        >
+
+            <!-- Story -->
+
+            <label>
+                Story Prompt
+            </label>
+
+            <textarea
+                name="story_prompt"
+                placeholder="Example: A brave fox exploring an enchanted forest"
+                required
+            ></textarea>
+
+
+            <!-- Character -->
+
+            <label>
+                Main Character Name
+            </label>
+
+            <input
+                type="text"
+                name="character_name"
+                placeholder="Example: Alex"
+                required
+            >
+
+
+            <!-- Setting -->
+
+            <label>
+                Setting
+            </label>
+
+            <select name="setting">
+
+                <option value="forest">
+                    Forest
+                </option>
+
+                <option value="school">
+                    School
+                </option>
+
+                <option value="city">
+                    City
+                </option>
+
+                <option value="space">
+                    Space
+                </option>
+
+            </select>
+
+
+            <!-- Tone -->
+
+            <label>
+                Story Tone
+            </label>
+
+            <select name="tone">
+
+                <option value="funny">
+                    Funny
+                </option>
+
+                <option value="dramatic">
+                    Dramatic
+                </option>
+
+                <option value="light-hearted">
+                    Light-hearted
+                </option>
+
+                <option value="poetic">
+                    Poetic
+                </option>
+
+            </select>
+
+
+            <!-- Art -->
+
+            <label>
+                Art Style
+            </label>
+
+            <select name="art_style">
+
+                <option value="comic book">
+                    Comic Book
+                </option>
+
+                <option value="anime">
+                    Anime
+                </option>
+
+                <option value="pixel art">
+                    Pixel Art
+                </option>
+
+                <option value="realistic">
+                    Realistic
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                ✨ Generate My Comic
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

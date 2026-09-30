@@ -1,0 +1,136 @@
+/* Comic Preview Header */
+
+.preview-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.preview-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.preview-header p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* Comic Panel */
+
+.comic-panel {
+    background: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.comic-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Image */
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Scene Description */
+
+.scene-description {
+    background: #f5f3ff;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    border-radius: 12px;
+}
+
+.scene-description h3 {
+    margin-top: 0;
+}
+
+
+/* Story */
+
+.story-content {
+    background: #fff7ed;
+
+    padding: 18px;
+
+    margin-top: 15px;
+
+    border-radius: 12px;
+}
+
+.story-content h3 {
+    margin-top: 0;
+}
+
+.story-content p,
+.scene-description p {
+    line-height: 1.7;
+}
+
+
+/* Buttons */
+
+.preview-actions {
+    text-align: center;
+
+    margin: 40px 0;
+}
+
+.download-btn,
+.new-comic-btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    margin: 8px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .preview-header h1 {
+        font-size: 28px;
+    }
+
+    .comic-panel {
+        padding: 15px;
+    }
+
+    .download-btn,
+    .new-comic-btn {
+        display: block;
+        margin: 12px 0;
+    }
+}
